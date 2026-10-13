@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV of Ronalyn C. Ignacio, Bachelor of Science in Computer Science student.">
+    <title>Ronalyn C. Ignacio | CV</title>
+    <style>
+        :root {
+            --ink: #101820;
+            --muted: #526675;
+            --accent: #1677d2;
+            --accent-light: #67c7ff;
+            --line: #b9d8ef;
+            --paper: #ffffff;
+            --page: #eaf5ff;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            background: var(--page);
+            color: var(--ink);
+            font-family: Inter, Arial, sans-serif;
+            line-height: 1.55;
+        }
+        .toolbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            background: rgba(241,239,235,.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line);
+        }
+        .toolbar button, .toolbar a {
+            border: 1px solid #d8d2ca;
+            border-radius: 7px;
+            padding: 9px 14px;
+            background: var(--paper);
+            color: var(--ink);
+            text-decoration: none;
+            font: 600 12px Inter, Arial, sans-serif;
+            cursor: pointer;
+        }
+        .toolbar button:hover, .toolbar a:hover { border-color: var(--accent); }
+        .cv-page {
+            width: min(100% - 32px, 900px);
+            margin: 28px auto 50px;
+            background: var(--paper);
+            box-shadow: 0 20px 55px rgba(25,20,15,.10);
+        }
+        .cv-inner { padding: 54px 60px 60px; }
+        .cv-header {
+            display: grid;
+            grid-template-columns: 1fr 130px;
+            gap: 30px;
+            align-items: start;
+            padding-bottom: 28px;
+            border-bottom: 2px solid var(--ink);
+        }
+        .name {
+            margin: 0;
+            font: 700 clamp(30px, 5vw, 46px)/1.05 Arial, sans-serif;
+            letter-spacing: -.8px;
+        }
+        .title {
+            margin: 10px 0 18px;
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .9px;
+            text-transform: uppercase;
+        }
+        .contact-line { margin: 5px 0; color: var(--muted); font-size: 13px; }
+        .contact-line a { color: inherit; }
+        .cv-photo {
+            width: 130px;
+            height: 160px;
+            border-radius: 10px;
+            object-fit: contain;
+            object-position: center top;
+            background: transparent;
+        }
+        .cv-section { padding-top: 26px; }
+        .cv-section h2 {
+            margin: 0 0 12px;
+            font: 700 12px/1.2 Arial, sans-serif;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+        .cv-section p { margin: 0; font-size: 14px; }
+        .cv-list { margin: 0; padding-left: 19px; }
+        .cv-list li { margin: 5px 0; font-size: 14px; }
+        .education-item, .seminar-item {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            gap: 20px;
+            padding: 13px 0;
+            border-top: 1px solid var(--line);
+        }
+        .education-item:first-of-type, .seminar-item:first-of-type { border-top: 0; padding-top: 0; }
+        .period { font-size: 12px; font-weight: 700; color: var(--muted); }
+        .item-title { margin: 0; font-size: 14px; font-weight: 700; }
+        .item-detail { margin: 3px 0 0; color: var(--muted); font-size: 13px; }
+        .seminar-item { grid-template-columns: 150px 1fr; }
+        .seminar-item .period { color: var(--accent); }
+        .item-bullets { margin: 6px 0 0; padding-left: 18px; }
+        .item-bullets li { margin: 3px 0; font-size: 13px; }
+        .skill-row { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 6px 0; }
+        .skill-row .period { color: var(--accent); }
+        .skill-values { font-weight: 400; }
+        .cv-footer { margin-top: 34px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+        @media (max-width: 620px) {
+            .cv-inner { padding: 34px 24px 40px; }
+            .cv-header { grid-template-columns: 1fr; }
+            .cv-photo { width: 105px; height: 130px; order: -1; }
+            .education-item, .seminar-item, .skill-row { grid-template-columns: 1fr; gap: 4px; }
+            .cv-page { width: min(100% - 18px, 900px); margin-top: 10px; }
+        }
+        @media print {
+            body { background: #fff; }
+            .toolbar { display: none; }
+            .cv-page { width: 100%; margin: 0; box-shadow: none; }
+            .cv-inner { padding: 24px 30px 30px; }
+            .cv-section { break-inside: avoid; }
+            .cv-section-split { break-inside: auto; }
+            .education-item, .seminar-item { break-inside: avoid; }
+            body { line-height: 1.38; }
+            .cv-inner { padding: 4px 14px 4px; }
+            .cv-header { padding-bottom: 8px; gap: 20px; }
+            .cv-photo { width: 88px; height: 108px; }
+            .title { margin: 6px 0 0; }
+            .cv-section { padding-top: 7px; }
+            .cv-section h2 { margin-bottom: 7px; }
+            .cv-section p, .cv-list li { font-size: 12.5px; }
+            .education-item, .seminar-item { padding: 4px 0; gap: 14px; }
+            .seminar-item { grid-template-columns: 140px 1fr; }
+            .item-title { font-size: 12.5px; }
+            .item-detail { font-size: 11.5px; margin-top: 1px; }
+            .period { font-size: 11px; }
+            .item-bullets { margin-top: 3px; }
+            .item-bullets li { font-size: 11.5px; margin: 1px 0; }
+            .skill-row { padding: 2px 0; grid-template-columns: 140px 1fr; gap: 14px; }
+            .cv-footer { margin-top: 6px; padding-top: 5px; }
+            @page { size: 8.5in 11in; margin: 7mm; }
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar" aria-label="CV actions">
+        <a href="../index.html">← Portfolio</a>
+        <button type="button" id="printCv">Print / Save PDF</button>
+    </div>
+
+    <main class="cv-page">
+        <div class="cv-inner">
+            <header class="cv-header">
+                <div>
+                    <h1 class="name">RONALYN C. IGNACIO</h1>
+                    <p class="title">Bachelor of Science in Computer Science Student</p>
+                </div>
+                <img id="cvPhoto" class="cv-photo" src="rona pic cv.png" alt="Portrait of Ronalyn C. Ignacio">
+            </header>
+
+            <section class="cv-section">
+                <h2>Personal Information</h2>
+                <p>Leon Guinto St, Malate Manila</p>
+                <p><a href="mailto:ronalynignacio661@gmail.com">ronalynignacio661@gmail.com</a></p>
+            </section>
+
+            <section class="cv-section">
+                <h2>Profile</h2>
+                <p>I am passionate about technology, continuous learning, and developing my technical skills. I enjoy solving problems, creating practical solutions, and exploring new ideas. I can work independently and collaborate effectively with others. I am eager to gain hands on experience, take on new challenges, and continue growing in a positive and innovative environment.</p>
+            </section>
+
+            <section class="cv-section">
+                <h2>Skills</h2>
+                <div class="skill-row"><div class="period">Programming</div><p class="item-title skill-values">Java</p></div>
+                <div class="skill-row"><div class="period">Productivity Tools</div><p class="item-title skill-values">Microsoft Office (Word, Excel, PowerPoint), Google Sheets, Google Forms</p></div>
+                <div class="skill-row"><div class="period">Design &amp; Creative</div><p class="item-title skill-values">Canva, Figma, Basic UI/UX Design, Video Editing</p></div>
+                <div class="skill-row"><div class="period">Communication</div><p class="item-title skill-values">Reporting and Presentations, Teamwork</p></div>
+                <div class="skill-row"><div class="period">Professional Skills</div><p class="item-title skill-values">Problem-Solving, Budgeting, Financial Record Keeping</p></div>
+            </section>
+
+            <section class="cv-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="period">Present</div>
+                    <div><p class="item-title">Philippine Christian University – Manila</p><p class="item-detail">Program: Bachelor of Science in Computer Science</p><p class="item-detail"><strong>Achievement: Dean’s Lister</strong></p></div>
+                </div>
+                <div class="education-item">
+                    <div class="period">2022–2024</div>
+                    <div><p class="item-title">Philippine Christian University – Manila</p><p class="item-detail">Strand: Science, Technology, Engineering, and Mathematics (STEM)</p><p class="item-detail"><strong>Achievement: With Honors</strong></p></div>
+                </div>
+            </section>
+
+            <section class="cv-section cv-section-split">
+                <h2>Leadership &amp; Organizational Experience</h2>
+                <div class="education-item">
+                    <div class="period">2026–2027</div>
+                    <div>
+                        <p class="item-title">Computer Science Student Organization</p>
+                        <p class="item-detail"><strong>3rd Year Treasurer</strong></p>
+                        <ul class="item-bullets">
+                            <li>Assisted in managing organizational finances, budgeting, and financial documentation.</li>
+                            <li>Supported the financial preparation and coordination of organizational activities and events.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="period">2024–2025</div>
+                    <div>
+                        <p class="item-title">Computer Science Student Organization</p>
+                        <p class="item-detail"><strong>1st Year Representative</strong></p>
+                        <ul class="item-bullets">
+                            <li>Represented first-year Computer Science students and helped communicate announcements, concerns, and organizational updates.</li>
+                            <li>Assisted in preparing and supporting student activities and events.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h2>Seminars / Trainings Attended</h2>
+                <div class="seminar-item">
+                    <div class="period">September 28, 2026</div>
+                    <div><p class="item-title">Bootup: Computer Science Skill Intensive</p><p class="item-detail">Topics: PHP, Machine Learning, Power BI</p></div>
+                </div>
+                <div class="seminar-item">
+                    <div class="period">April 28, 2025</div>
+                    <div><p class="item-title">Planning for Progress: Time Management for College Success</p></div>
+                </div>
+                <div class="seminar-item">
+                    <div class="period">May 20, 2025</div>
+                    <div><p class="item-title">Building the Future: Real-World Tools for IT and CS Students</p><p class="item-detail">Topics: DevOps and CI/CD, Web3 Technology, Freelancing in Tech</p></div>
+                </div>
+                <div class="seminar-item">
+                    <div class="period">November 21, 2025</div>
+                    <div><p class="item-title">The Culture Industry: Mass Deception in the Contemporary World</p></div>
+                </div>
+                <div class="seminar-item">
+                    <div class="period">March 04, 2026</div>
+                    <div><p class="item-title">Responsible Use of AI in Education: Its Influence on Student Growth and Character in a Future-Proof Digital World</p></div>
+                </div>
+            </section>
+
+            <p class="cv-footer">Ronalyn C. Ignacio · Computer Science Student</p>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            const printBtn = document.getElementById("printCv");
+            if (printBtn) printBtn.addEventListener("click", function () { window.print(); });
+        })();
+    </script>
+</body>
+</html>
