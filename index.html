@@ -1,0 +1,677 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronalyn C. Ignacio | Portfolio</title>
+    <link rel="icon" type="image/png" href="rci-logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="noise-layer"></div>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="#home" aria-label="RCI home">
+            <span class="logo-mark-wrap"><img class="logo-mark-image" src="rci-logo.png" alt="RCI"></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certificate">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Toggle light/dark mode">
+                <span class="theme-icon" aria-hidden="true">☾</span>
+                <span class="theme-label">Dark</span>
+            </button>
+            <a href="cv/index.html" class="nav-cv-btn" target="_blank" rel="noopener">
+                <span>View My CV</span>
+                <span class="nav-cv-icon" aria-hidden="true">↓</span>
+            </a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+        </div>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-copy">
+        <p class="eyebrow">BS Computer Science Student</p>
+
+        <h1>
+            Hi, I'm <span class="line-wrap" data-line="Ronalyn C."></span>
+            <span class="line-wrap accent-text" data-line="Ignacio"></span>
+        </h1>
+
+        <p class="hero-text">
+            I like learning new things, solving problems, and turning ideas
+            into useful, working solutions, one project at a time.
+        </p>
+
+        <ul class="hero-contact" aria-label="Contact information">
+            <li class="contact-item is-link">
+                <span class="contact-icon" aria-hidden="true">📞</span>
+                <a href="tel:09393477300" aria-label="Call Ronalyn at 09393477300">09393477300</a>
+            </li>
+            <li class="contact-item is-link">
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                <a href="mailto:ronalynignacio661@gmail.com" aria-label="Email Ronalyn at ronalynignacio661@gmail.com">ronalynignacio661@gmail.com</a>
+            </li>
+            <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <span>Leon Guinto St, Malate, Manila</span>
+            </li>
+        </ul>
+
+        <div class="hero-social" aria-label="Social media">
+            <a class="social-link" href="https://www.facebook.com/ronalyn.ignacio.446728/" target="_blank" rel="noopener noreferrer" aria-label="Ronalyn on Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.02 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.88v2.27h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.09 24 12.07z"/></svg></a>
+            <a class="social-link" href="https://www.tiktok.com/@rnly11" target="_blank" rel="noopener noreferrer" aria-label="Ronalyn on TikTok" title="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+        </div>
+
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-solid">Get in touch</a>
+            <a href="#skills" class="btn btn-outline">See my skills</a>
+        </div>
+
+        <div class="stat-row">
+            <div class="stat">
+                <span class="stat-num">6+</span>
+                <span class="stat-label">Core skills</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">9</span>
+                <span class="stat-label">Seminars Attended</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">4</span>
+                <span class="stat-label">Years at PCU Manila</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+        <div class="hero-photo-orbit orbit-one"></div>
+        <div class="hero-photo-orbit orbit-two"></div>
+
+        <div class="hero-photo-card">
+            <div class="photo-shine"></div>
+
+            <div class="profile-photo-stage">
+                <span class="profile-card-glow"></span>
+                <img src="profile-cutout-removebg-preview.png" alt="Portrait of Ronalyn C. Ignacio">
+            </div>
+
+            <div class="profile-info-label">
+                <div class="profile-handle">
+                    <span class="profile-status-dot"></span>
+                    <span>@Rnly_Ignc</span>
+                </div>
+                <span class="profile-opportunity">Open to Opportunities</span>
+            </div>
+
+        
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="section-head reveal">
+        <p class="section-tag">About</p>
+        <h2>Who I am</h2>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-content reveal">
+            <p>
+                I am passionate about technology, continuous learning, and
+                developing my technical skills.
+            </p>
+            <p>
+                I enjoy solving problems, creating practical solutions, and
+                exploring new ideas. I can work independently and collaborate
+                effectively with others.
+            </p>
+            <p>
+                I am eager to gain hands on experience, take on new challenges,
+                and continue growing in a positive and innovative environment.
+            </p>
+        </div>
+
+        <div class="about-card reveal">
+            <h3>Currently</h3>
+            <p class="about-card-main">Philippine Christian University – Manila</p>
+            <p class="about-card-sub">Bachelor of Science in Computer Science</p>
+            <div class="about-card-divider"></div>
+            <h3>Based in</h3>
+            <p class="about-card-main">Malate, Manila</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section dark-section">
+    <div class="section-head reveal">
+        <p class="section-tag">Capabilities</p>
+        <h2>Skills &amp; tools</h2>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card reveal reveal-stagger" data-tilt aria-label="Programming skill card">
+            <div class="skill-card-inner">
+                <div class="skill-card-face skill-card-front">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <span class="flip-hint">Hover to explore</span>
+                </div>
+                <div class="skill-card-face skill-card-back">
+                    <span class="skill-back-label">PROGRAMMING</span>
+                    <h3>Programming</h3>
+                    <p>Building problem-solving skills through hands-on programming practice.</p>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card reveal reveal-stagger" data-tilt aria-label="Productivity tools skill card">
+            <div class="skill-card-inner">
+                <div class="skill-card-face skill-card-front">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Productivity tools</h3>
+                    <span class="flip-hint">Hover to explore</span>
+                </div>
+                <div class="skill-card-face skill-card-back">
+                    <span class="skill-back-label">PRODUCTIVITY TOOLS</span>
+                    <h3>Productivity tools</h3>
+                    <p>Word, Excel, PowerPoint, and Google tools for organizing data.</p>
+                    <ul class="skill-list">
+                        <li>Microsoft Office</li>
+                        <li>Google Sheets</li>
+                        <li>Google Forms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card reveal reveal-stagger" data-tilt aria-label="Design skill card">
+            <div class="skill-card-inner">
+                <div class="skill-card-face skill-card-front">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Design</h3>
+                    <span class="flip-hint">Hover to explore</span>
+                </div>
+                <div class="skill-card-face skill-card-back">
+                    <span class="skill-back-label">DESIGN</span>
+                    <h3>Design</h3>
+                    <p>Creates clean, simple visuals and layouts.</p>
+                    <ul class="skill-list">
+                        <li>Canva</li>
+                        <li>Figma</li>
+                        <li>Basic UI/UX Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card reveal reveal-stagger" data-tilt aria-label="Creative and documentation skill card">
+            <div class="skill-card-inner">
+                <div class="skill-card-face skill-card-front">
+                    <div class="skill-icon">🎬</div>
+                    <h3>Creative &amp; documentation</h3>
+                    <span class="flip-hint">Hover to explore</span>
+                </div>
+                <div class="skill-card-face skill-card-back">
+                    <span class="skill-back-label">CORE SKILL</span>
+                    <h3>Creative &amp; documentation</h3>
+                    <p>Can turn ideas and project details into clear, engaging visual content and well-structured reports.</p>
+                    <ul class="skill-list">
+                        <li>Video editing</li>
+                        <li>Reporting and Presentations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card reveal reveal-stagger" data-tilt aria-label="Teamwork and collaboration skill card">
+            <div class="skill-card-inner">
+                <div class="skill-card-face skill-card-front">
+                    <div class="skill-icon">🤝</div>
+                    <h3>Working with others</h3>
+                    <span class="flip-hint">Hover to explore</span>
+                </div>
+                <div class="skill-card-face skill-card-back">
+                    <span class="skill-back-label">CORE SKILL</span>
+                    <h3>Working with others</h3>
+                    <p>Works well independently and with a team, with a focus on communication, cooperation, and shared goals.</p>
+                    <ul class="skill-list">
+                        <li>Teamwork</li>
+                        <li>Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card reveal reveal-stagger" data-tilt aria-label="Professional skills skill card">
+            <div class="skill-card-inner">
+                <div class="skill-card-face skill-card-front">
+                    <div class="skill-icon">📒</div>
+                    <h3>Professional skills</h3>
+                    <span class="flip-hint">Hover to explore</span>
+                </div>
+                <div class="skill-card-face skill-card-back">
+                    <span class="skill-back-label">PROFESSIONAL SKILLS</span>
+                    <h3>Professional skills</h3>
+                    <p>Careful with numbers when handling funds and records.</p>
+                    <ul class="skill-list">
+                        <li>Problem-Solving</li>
+                        <li>Budgeting</li>
+                        <li>Financial Record Keeping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="journey" class="section journey-section">
+    <div class="section-head reveal">
+        <p class="section-tag">Academic Background</p>
+        <h2>My Journey</h2>
+    </div>
+
+    <div class="journey-slideshow" data-journey-slider>
+        <div class="journey-slides" aria-live="polite">
+            <div class="journey-slide is-active" data-journey-slide="0" aria-label="Education slide">
+                <div class="journey-slide-head reveal">
+                    <div>
+                        <p class="journey-subsection-kicker">Slide 1</p>
+                        <h3>Education</h3>
+                    </div>
+                    <span class="journey-slide-count">01 / 02</span>
+                </div>
+
+                <div class="journey-timeline" aria-label="Education timeline">
+                    <div class="journey-timeline-item journey-education reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head">
+                                <span class="journey-category">Education</span>
+                                <time class="journey-period">Present</time>
+                            </div>
+                            <p class="journey-detail-label">Institution</p>
+                            <h3>Philippine Christian University – Manila</h3>
+                            <p class="journey-detail-label">Program</p>
+                            <p class="journey-role">Bachelor of Science in Computer Science</p>
+                            <div class="journey-achievement-block">
+                                <span class="journey-detail-label">Academic Achievement</span>
+                                <p class="journey-achievement">Dean’s Lister</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="journey-timeline-item journey-education reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head">
+                                <span class="journey-category">Education</span>
+                                <time class="journey-period">2022 – 2024</time>
+                            </div>
+                            <p class="journey-detail-label">Institution</p>
+                            <h3>Philippine Christian University – Manila</h3>
+                            <p class="journey-detail-label">Strand</p>
+                            <p class="journey-role">Science, Technology, Engineering, and Mathematics (STEM)</p>
+                            <div class="journey-achievement-block">
+                                <span class="journey-detail-label">Academic Achievement</span>
+                                <p class="journey-achievement">With Honors</p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="journey-slide" data-journey-slide="1" aria-label="Seminars and trainings slide" hidden>
+                <div class="journey-slide-head reveal">
+                    <div>
+                        <p class="journey-subsection-kicker">Slide 2</p>
+                        <h3>Seminars &amp; Trainings</h3>
+                    </div>
+                    <span class="journey-slide-count">02 / 02</span>
+                </div>
+
+                <div class="journey-timeline" aria-label="Seminars and trainings timeline">
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">September 28, 2026</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Bootup: Computer Science Skill Intensive</h3>
+                            <p class="journey-detail-label">Focus</p><p class="journey-role">PHP</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">September 28, 2026</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Bootup: Computer Science Skill Intensive</h3>
+                            <p class="journey-detail-label">Focus</p><p class="journey-role">Machine Learning</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">September 28, 2026</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Bootup: Computer Science Skill Intensive</h3>
+                            <p class="journey-detail-label">Focus</p><p class="journey-role">Power BI</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">March 04, 2026</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Responsible Use of AI in Education: Its Influence on Student Growth and Character in a Future-Proof Digital World</h3>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">November 21, 2025</time></div>
+                            <p class="journey-detail-label">Event</p><h3>The Culture Industry: Mass Deception in the Contemporary World</h3>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">May 20, 2025</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Building the Future: Real-World Tools for IT and CS Students</h3>
+                            <p class="journey-detail-label">Focus</p><p class="journey-role">DevOps and CI/CD</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">May 20, 2025</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Building the Future: Real-World Tools for IT and CS Students</h3>
+                            <p class="journey-detail-label">Focus</p><p class="journey-role">Web3 Technology</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">May 20, 2025</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Building the Future: Real-World Tools for IT and CS Students</h3>
+                            <p class="journey-detail-label">Focus</p><p class="journey-role">Freelancing in Tech</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-seminar reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Seminar &amp; Training</span><time class="journey-period">April 28, 2025</time></div>
+                            <p class="journey-detail-label">Event</p><h3>Planning for Progress: Time Management for College Success</h3>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="journey-subsection-head reveal">
+                    <p class="journey-subsection-kicker">Organizations Joined</p>
+                    <h3>Organizations</h3>
+                </div>
+
+                <div class="journey-timeline" aria-label="Organizations timeline">
+                    <div class="journey-timeline-item journey-organization reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Organization</span><time class="journey-period">2026 – 2027</time></div>
+                            <p class="journey-detail-label">Organization</p><h3>Computer Science Student Organization</h3>
+                            <p class="journey-detail-label">Role</p><p class="journey-role">3rd Year Treasurer</p>
+                            <p class="journey-detail-label">Description</p>
+                            <p>Responsible for assisting with the organization’s financial management, including monitoring funds, recording transactions, and helping ensure that expenses are properly documented.</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item journey-organization reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Organization</span><time class="journey-period">2024 – 2025</time></div>
+                            <p class="journey-detail-label">Organization</p><h3>Computer Science Student Organization</h3>
+                            <p class="journey-detail-label">Role</p><p class="journey-role">1st Year Representative</p>
+                            <p class="journey-detail-label">Description</p>
+                            <p>Represented first-year Computer Science students, helped communicate their concerns and suggestions, and assisted in organization activities and events.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="journey-slide-controls" aria-label="Journey slide navigation">
+            <button class="journey-slide-button" type="button" data-journey-prev aria-label="Previous slide">← Previous</button>
+            <div class="journey-slide-indicators" role="tablist" aria-label="Journey slides">
+                <button class="journey-slide-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Go to Education slide" data-journey-goto="0">01</button>
+                <button class="journey-slide-dot" type="button" role="tab" aria-selected="false" aria-label="Go to Seminars and Trainings slide" data-journey-goto="1">02</button>
+            </div>
+            <button class="journey-slide-button" type="button" data-journey-next aria-label="Next slide">Next →</button>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section journey-section">
+    <div class="section-head reveal">
+        <p class="section-tag">Experience</p>
+        <h2>Leadership</h2>
+    </div>
+
+    <div class="experience-rows">
+        <div class="experience-row" aria-label="Leadership experience">
+            <div class="journey-slide-head reveal">
+                <div>
+                    <p class="journey-subsection-kicker">Experience</p>
+                    <h3>Leadership</h3>
+                </div>
+                <span class="journey-slide-count">01 / 01</span>
+            </div>
+            <div class="journey-timeline">
+                    <div class="journey-timeline-item reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Leadership</span><time class="journey-period">2026 – 2027</time></div>
+                            <p class="journey-detail-label">Organization</p><p class="journey-role">Computer Science Student Organization</p>
+                            <p class="journey-detail-label">Role</p><h3>3rd Year Treasurer</h3>
+                            <p>Responsible for assisting with the organization’s financial management, including monitoring funds, recording transactions, and helping ensure that expenses are properly documented.</p>
+                        </article>
+                    </div>
+                    <div class="journey-timeline-item reveal reveal-stagger">
+                        <div class="journey-timeline-marker" aria-hidden="true"></div>
+                        <article class="journey-timeline-content">
+                            <div class="journey-entry-head"><span class="journey-category">Leadership</span><time class="journey-period">2024 – 2025</time></div>
+                            <p class="journey-detail-label">Organization</p><p class="journey-role">Computer Science Student Organization</p>
+                            <p class="journey-detail-label">Role</p><h3>1st Year Representative</h3>
+                            <p>Represented first-year Computer Science students, helped communicate their concerns and suggestions, and assisted in organization activities and events.</p>
+                        </article>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certificate" class="section certificate-section">
+    <div class="section-head reveal">
+        <p class="section-tag">Credentials</p>
+        <h2>CERTIFICATE</h2>
+    </div>
+
+    <div class="certificate-grid">
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="PHP.png" alt="Certificate: Bootup: Computer Science Skill Intensive — Topics: PHP">
+            </div>
+            <div class="certificate-card-label">Bootup: Computer Science Skill Intensive<br><span>Topics: PHP</span></div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="Learning Machine.png" alt="Certificate: Bootup: Computer Science Skill Intensive — Topics: Machine Learning">
+            </div>
+            <div class="certificate-card-label">Bootup: Computer Science Skill Intensive<br><span>Topics: Machine Learning</span></div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="Power BI.png" alt="Certificate: Bootup: Computer Science Skill Intensive — Topics: Power BI">
+            </div>
+            <div class="certificate-card-label">Bootup: Computer Science Skill Intensive<br><span>Topics: Power BI</span></div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="Workshop.png" alt="Certificate: Planning for Progress: Time Management for College Success">
+            </div>
+            <div class="certificate-card-label">Planning for Progress: Time Management for College Success</div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="DevOps.png" alt="Certificate: Building the Future: Real-World Tools for IT and CS Students — Topics: DevOps and CI/CD">
+            </div>
+            <div class="certificate-card-label">Building the Future: Real-World Tools for IT and CS Students<br><span>Topics: DevOps and CI/CD</span></div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="Web3.png" alt="Certificate: Building the Future: Real-World Tools for IT and CS Students — Topics: Web3 Technology">
+            </div>
+            <div class="certificate-card-label">Building the Future: Real-World Tools for IT and CS Students<br><span>Topics: Web3 Technology</span></div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="Freelancing.png" alt="Certificate: Building the Future: Real-World Tools for IT and CS Students — Topics: Freelancing in Tech">
+            </div>
+            <div class="certificate-card-label">Building the Future: Real-World Tools for IT and CS Students<br><span>Topics: Freelancing in Tech</span></div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="The Culture Insdustry.png" alt="Certificate: The Culture Industry: Mass Deception in the Contemporary World">
+            </div>
+            <div class="certificate-card-label">The Culture Industry: Mass Deception in the Contemporary World</div>
+        </article>
+
+        <article class="certificate-card reveal reveal-stagger">
+            <div class="certificate-media">
+                <img src="Responsible Use of AI in Education.png" alt="Certificate: Responsible Use of AI in Education: Its Influence on Student Growth and Character in a Future-Proof Digital World">
+            </div>
+            <div class="certificate-card-label">Responsible Use of AI in Education: Its Influence on Student Growth and Character in a Future-Proof Digital World</div>
+        </article>
+    </div>
+</section>
+
+
+<!-- CERTIFICATE LIGHTBOX -->
+<div class="certificate-lightbox" id="certificateLightbox" aria-hidden="true">
+    <div class="certificate-lightbox-backdrop" data-lightbox-close></div>
+    <div class="certificate-lightbox-dialog" role="dialog" aria-modal="true" aria-label="Certificate preview">
+        <button class="certificate-lightbox-close" type="button" aria-label="Close certificate preview" data-lightbox-close>×</button>
+        <img id="certificateLightboxImage" class="certificate-lightbox-image" src="" alt="Full certificate preview">
+    </div>
+</div>
+
+<section id="contact" class="contact">
+
+    <div class="section-head reveal">
+        <p class="section-tag">Get in touch</p>
+        <h2><a class="connect-link" href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">Let's connect</a></h2>
+    </div>
+
+    <div class="contact-grid reveal">
+        <div class="contact-info">
+            <p class="contact-lead">
+                I'm always interested in new opportunities and projects.
+                Whether you have a question or just want to say hi, feel
+                free to reach out.
+            </p>
+
+            <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <a href="mailto:ronalynignacio661@gmail.com" aria-label="Email Ronalyn at Gmail" onclick="window.location.href=this.href; return false;">ronalynignacio661@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <a href="tel:09393477300">09393477300</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">◎</span>
+                <a href="https://www.instagram.com/rnly_ignc/" target="_blank" rel="noopener noreferrer">@rnly_ignc</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <span>Leon Guinto St, Malate, Manila</span>
+            </div>
+
+            <div class="contact-social" aria-label="Social media">
+                <a class="social-chip" href="https://www.facebook.com/ronalyn.ignacio.446728/" target="_blank" rel="noopener noreferrer" aria-label="Ronalyn on Facebook">
+                    <span class="social-chip-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.02 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.88v2.27h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.09 24 12.07z"/></svg></span>
+                    <span class="social-chip-text"><span class="social-chip-name">Facebook</span><span class="social-chip-handle">Ronalyn Ignacio</span></span>
+                </a>
+                <a class="social-chip" href="https://www.tiktok.com/@rnly11" target="_blank" rel="noopener noreferrer" aria-label="Ronalyn on TikTok">
+                    <span class="social-chip-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></span>
+                    <span class="social-chip-text"><span class="social-chip-name">TikTok</span><span class="social-chip-handle">@rnly11</span></span>
+                </a>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-solid">Send message</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Ronalyn C. Ignacio</p>
+    <p>BS Computer Science</p>
+</footer>
+
+<!-- RONA AI FLOATING CHAT WIDGET -->
+<div class="chat-widget" id="chatWidget">
+    <div class="chat-widget-panel" id="chatWidgetPanel" role="dialog" aria-label="Chat with Rona, the portfolio AI assistant" hidden>
+        <div class="chat-widget-header">
+            <span class="chat-widget-title">Chat with Rona</span>
+            <button class="chat-widget-close" type="button" id="chatWidgetClose" aria-label="Close chat">×</button>
+        </div>
+        <iframe
+            src="https://www.chatbase.co/chatbot-iframe/tCMckbZ981jxanKKjU8pY"
+            width="100%"
+            style="height: 100%; min-height: 700px"
+            frameborder="0"
+            referrerpolicy="no-referrer-when-downgrade"
+            allow="microphone"
+            title="Rona AI Portfolio Assistant"
+        ></iframe>
+    </div>
+    <button class="chat-widget-launcher" type="button" id="chatWidgetLauncher" aria-label="Open chat with Rona" aria-expanded="false" aria-controls="chatWidgetPanel">
+        <svg class="chat-icon-open" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9.4l-4.7 3.9A.8.8 0 0 1 3.4 21v-3H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" transform="translate(0 .2)"/></svg>
+        <svg class="chat-icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
